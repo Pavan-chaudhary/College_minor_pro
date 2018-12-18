@@ -1,0 +1,63 @@
+doctype html
+head
+  title Login V8
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' type='text/css' href='/start/util-css')
+  link(rel='stylesheet' type='text/css' href='/start/main-css')
+.limiter
+  .container-login100
+    .wrap-login100
+      // -------form Inputs------
+      form.login100-form.validate-form.p-l-55.p-r-55.p-t-178(action='/start/submit' method='post')
+        span.login100-form-title
+          | Sign Up
+        .wrap-input100.validate-input.m-b-16
+          input.input100(type='text' name='firstname' placeholder='Firstname')
+          span.focus-input100
+        .wrap-input100.validate-input.m-b-16
+          input.input100(type='text' name='lastname' placeholder='Lastname')
+          span.focus-input100
+        .wrap-input100.validate-input.m-b-16
+          input.input100(type='email' name='email' placeholder='Email')
+          span.focus-input100
+        .wrap-input100.validate-input.m-b-16
+          input.input100(type='number' name='phone' placeholder='Phone')
+          span.focus-input100
+        .wrap-input100.validate-input.m-b-16
+          input.input100(type='date' name='bdate' placeholder='Date of Birth')
+          span.focus-input100
+        .wrap-input100.validate-input.m-b-16
+          // <input class="input100" type="text" name="city" placeholder="City">
+          select.input100(name='city' value='City')
+            
+            option(value='ahmedabad') Ahmedabad
+            option(value='delhi') Delhi
+            option(value='mumbai') Mumbai
+          span.focus-input100
+        .wrap-input100.validate-input.m-b-16
+          input.input100(type='number' name='pin' placeholder='PIN Code')
+          span.focus-input100
+        .wrap-input100.validate-input
+          input.input100(type='password' name='pass' placeholder='Password')
+          span.focus-input100
+        .text-right.p-t-13.p-b-23
+        .container-login100-form-btn
+          input.login100-form-btn(type='submit' value='Register')
+        if(a)
+         p(style='color:red;margin-top:10px:margin-left:0px;') *#{a.msg} 
+        if(b)
+         p(style='color:red;margin-top:10px:margin-left:0px;') *#{b.msg}
+        if(c)
+         p(style='color:red;margin-top:10px:margin-left:0px;') *#{c.msg} 
+        if(d)
+         p(style='color:red;margin-top:10px:margin-left:0px;') *#{d.msg}
+        if(e)
+         p(style='color:red;margin-top:10px:margin-left:0px;') *#{e.msg}
+        if(f)
+         p(style='color:red;margin-top:10px:margin-left:0px;') *#{f.msg}
+        if(g)
+         p(style='color:red;margin-top:10px:margin-left:0px;') *#{g.msg}
+      // -------form ends----------------
+      .flex-col-c.p-t-170.p-b-40
+

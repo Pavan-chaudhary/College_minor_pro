@@ -1,0 +1,23 @@
+doctype html
+head
+  title Login V8
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' type='text/css' href='/start/util-css')
+  link(rel='stylesheet' type='text/css' href='/start/main-css')
+.limiter
+  .container-login100
+    .wrap-login100
+      form.login100-form.validate-form.p-l-55.p-r-55.p-t-178(action='/start/reset_pass' method='post')
+        span.login100-form-title
+          | Reset your Password
+        .wrap-input100.validate-input.m-b-16
+          input.input100(type='number' name='mob' placeholder= mob disabled )
+          span.focus-input100
+        .wrap-input100.validate-input
+          input.input100(type='password' name='pass' placeholder='Enter New Password')
+          span.focus-input100
+        .text-right.p-t-13.p-b-23
+        .container-login100-form-btn
+          input.login100-form-btn(type='submit' value='Submit')
+        .flex-col-c.p-t-170.p-b-40
